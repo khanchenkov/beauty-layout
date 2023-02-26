@@ -1,0 +1,39 @@
+.contacts {
+  &__wrapper {
+    @include flex-list;
+    padding: 40px 0;
+  }
+  &__socials {
+    ul {
+      @include flex-list;
+      width: 240px;
+      li {
+        display: flex;
+        border: 2px solid $secondary-color;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        a {
+          margin: auto;
+        }
+      }
+    }
+  }
+  &__phone {
+    @include flex-list;
+    p {
+      font-size: 16px;
+      margin-right: 40px;
+      color: $black-text;
+    }
+    button {
+      border: 2px solid $secondary-color;
+      border-radius: 40px;
+      padding: 12px 26px;
+      color: $black-text;
+      background-color: $bg-color;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}

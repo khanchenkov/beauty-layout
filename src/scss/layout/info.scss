@@ -1,0 +1,47 @@
+.info {
+  background-color: $main-color;
+  padding: 50px 0 130px;
+  &__wrapper {
+    @include flex-list;
+  }
+  &__destribution,
+  &__map {
+    background-color: $secondary-color;
+    padding: 35px 40px;
+    width: 540px;
+    height: 212px;
+    color: $bg-color;
+    h3 {
+      @include roboto-bold;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    p {
+      margin-bottom: 25px;
+      line-height: 1.4;
+    }
+  }
+  &__destribution {
+    @include flex-list;
+    div {
+      input {
+        border-radius: 30px;
+        padding: 9px 25px;
+        border: none;
+        &::placeholder {
+          color: #c6c6c6;
+        }
+      }
+    }
+  }
+  &__map {
+    button {
+      border: 2px solid $bg-color;
+      border-radius: 30px;
+      background-color: transparent;
+      color: $bg-color;
+      padding: 9px 28px;
+      cursor: pointer;
+    }
+  }
+}

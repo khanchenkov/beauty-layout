@@ -1,0 +1,30 @@
+.hero {
+  background: url("@img/hero-bg.png") no-repeat;
+  background-position: 50% 50%;
+  height: 600px;
+  padding: 192px 0px;
+  &__wrapper {
+    h1,
+    p {
+      margin-bottom: 50px;
+      color: $bg-color;
+    }
+    h1 {
+      font-size: 48px;
+      @include roboto-bold;
+    }
+    p {
+      width: 320px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    button {
+      background-color: transparent;
+      border: 2px solid $bg-color;
+      color: $bg-color;
+      border-radius: 40px;
+      padding: 12px 45px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.footer {
+  background-color: $main-color;
+  &__wrapper {
+    @include flex-list;
+    padding: 25px 0;
+    p,
+    a {
+      color: $footer-text;
+      font-size: 12px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

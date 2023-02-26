@@ -1,0 +1,11 @@
+body,
+button {
+  @include roboto-regular;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
